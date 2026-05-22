@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #0f1419;
+  color: #e7e9ea;
+  line-height: 1.5;
+}
+
+header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #2f3336;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.card {
+  background: #16181c;
+  border: 1px solid #2f3336;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.875rem;
+  color: #8b98a5;
+}
+
+input {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #2f3336;
+  border-radius: 6px;
+  background: #0f1419;
+  color: #e7e9ea;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+button.primary {
+  background: #1d9bf0;
+  color: #fff;
+}
+
+button.danger {
+  background: #f4212e;
+  color: #fff;
+}
+
+button.success {
+  background: #00ba7c;
+  color: #fff;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid #2f3336;
+  color: #e7e9ea;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none !important;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.65rem 0.5rem;
+  border-bottom: 1px solid #2f3336;
+}
+
+th {
+  color: #8b98a5;
+  font-weight: 600;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #3d5466;
+  color: #fff;
+}
+
+.status-fraud {
+  background: #f4212e33;
+  color: #f4212e;
+}
+
+.status-legitimate {
+  background: #00ba7c33;
+  color: #00ba7c;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #f4212e;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+#history-panel h2 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2f3336;
+  font-size: 0.875rem;
+}
+
+.user-badge {
+  font-size: 0.875rem;
+  color: #8b98a5;
+}
+
+/* FDS-20: compact density, 3 brand colours (navy, blue accent, semantic red/green) */
+.card-table table {
+  font-size: 0.8125rem;
+}
+
+.card-table th,
+.card-table td {
+  padding: 0.35rem 0.45rem;
+  line-height: 1.3;
+}
+
+.tx-row {
+  cursor: pointer;
+}
+
+.tx-row:hover {
+  background: #1a1f26;
+}
+
+.expand-cell {
+  width: 2rem;
+  color: #8b98a5;
+  text-align: center;
+}
+
+.audit-detail td {
+  background: #12161c;
+  padding: 0.5rem 1rem !important;
+}
+
+.audit-panel-inner {
+  font-size: 0.8125rem;
+}
+
+.loading-cell {
+  text-align: center;
+  color: #8b98a5;
+  padding: 1.5rem !important;
+}
+
+.muted {
+  color: #8b98a5;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.actions-cell button {
+  padding: 0.3rem 0.55rem;
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
+}
+
+.toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.toast-error {
+  background: #f4212e;
+  color: #fff;
+}
+
+.toast-success {
+  background: #00ba7c;
+  color: #fff;
+}
