@@ -1,0 +1,26 @@
+schema: spec-with-security-review
+
+context: |
+  GlobalBank fraud review system and OpenSpec learning workspace.
+  Stack: Node.js, Express, SQLite, JWT, static HTML analyst UI.
+  Security-sensitive: transaction status changes, audit trail integrity, analyst auth.
+  Existing app under server/ and public/; specs under openspec/specs/.
+  Product backlog (To Do only): openspec/backlog-todos.md — synced from Fraud_Detection_Backlog.xlsx.
+  When implementing backlog items, map Story ID (FDS-XX) to proposal/tasks and verify against acceptance criteria.
+
+rules:
+  proposal:
+    - Call out security-sensitive capabilities explicitly in Capabilities
+    - Note auth, audit, and data-handling impact for financial/ops workflows
+  specs:
+    - Include security-relevant requirements (authz, audit, validation) where applicable
+    - Use SHALL/MUST for security controls
+  design:
+    - Document trust boundaries and security decisions with rationale
+  security-review:
+    - Review as a security architect; be specific to this codebase
+    - Every Critical/High finding must have a actionable recommendation
+    - Reference OWASP API Security and ASVS categories where relevant
+  tasks:
+    - Include remediation tasks for all Critical and High SEC-* findings
+    - Add security hardening tasks from the pre-implementation checklist

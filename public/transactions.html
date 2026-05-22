@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlobalBank — Fraud Review</title>
+    <link rel="stylesheet" href="/transactions.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GlobalBank Fraud Review</h1>
+      <span id="user-info" class="user-badge"></span>
+      <button id="logout-btn" class="ghost hidden" type="button">Log out</button>
+    </header>
+
+    <div id="toast" class="toast hidden" role="alert"></div>
+
+    <main>
+      <section id="login-section" class="card">
+        <h2>Analyst login</h2>
+        <form id="login-form">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="analyst@globalbank.com" required />
+
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Your password" required />
+
+          <button class="primary" type="submit">Sign in</button>
+        </form>
+        <p id="login-error" class="error"></p>
+      </section>
+
+      <section id="app-section" class="hidden">
+        <div class="card card-table">
+          <h2>Transactions</h2>
+          <p class="user-badge">Newest first · 50 per page · click a row for audit history</p>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Date</th>
+                <th>Merchant</th>
+                <th>Account ID</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tx-body">
+              <tr>
+                <td colspan="7" class="loading-cell">Loading transactions…</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <button id="prev-page" class="ghost" type="button">Previous</button>
+            <span id="page-info"></span>
+            <button id="next-page" class="ghost" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/transactions.js"></script>
+  </body>
+</html>

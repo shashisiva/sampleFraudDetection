@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Secrets and local env
+.env
+.env.local
+*.pem
+
+# SQLite and test databases
+server/data/
+*.db
+*.db-journal
+
+# Test coverage
+server/coverage/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.log
+
+# Optional local scratch
+backlog-todo.txt
