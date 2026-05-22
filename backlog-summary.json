@@ -1,0 +1,109 @@
+{
+  "todo_status_matches": 17,
+  "non_done_count": 17,
+  "done_count": 8,
+  "non_done": [
+    {
+      "id": "FDS-04",
+      "status": "In Progress",
+      "summary": "View paginated transaction list",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-05",
+      "status": "In Progress",
+      "summary": "Mark transaction as fraud",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-06",
+      "status": "To Do",
+      "summary": "Mark transaction as legitimate",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-07",
+      "status": "To Do",
+      "summary": "Transaction status badge display",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-08",
+      "status": "To Do",
+      "summary": "Fix: transaction list not ordered newest first",
+      "type": "Bug"
+    },
+    {
+      "id": "FDS-09",
+      "status": "To Do",
+      "summary": "Transaction service unit tests",
+      "type": "Task"
+    },
+    {
+      "id": "FDS-10",
+      "status": "To Do",
+      "summary": "View transaction audit trail",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-11",
+      "status": "To Do",
+      "summary": "Audit entry written on every status change",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-12",
+      "status": "To Do",
+      "summary": "Collapsible audit trail in UI",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-15",
+      "status": "To Do",
+      "summary": "Status enum validation on PATCH endpoint",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-16",
+      "status": "To Do",
+      "summary": "No stack traces in error responses",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-17",
+      "status": "To Do",
+      "summary": "Fix: SonarQube Critical — hardcoded JWT secret",
+      "type": "Bug"
+    },
+    {
+      "id": "FDS-18",
+      "status": "To Do",
+      "summary": "Transaction table renders on load",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-19",
+      "status": "To Do",
+      "summary": "Fraud / Legitimate action buttons per row",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-20",
+      "status": "To Do",
+      "summary": "UI Design — styling sprint",
+      "type": "Story"
+    },
+    {
+      "id": "FDS-24",
+      "status": "To Do",
+      "summary": "GitHub Actions CI pipeline",
+      "type": "Task"
+    },
+    {
+      "id": "FDS-25",
+      "status": "To Do",
+      "summary": "Operating Model documentation",
+      "type": "Story"
+    }
+  ]
+}

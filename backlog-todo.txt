@@ -1,0 +1,3 @@
+Status counts: {'Done': 8, 'In Progress': 2, 'To Do': 15}
+
+TODO items:
